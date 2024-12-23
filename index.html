@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>サッカーくじ入力支援ソフト GenericPS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="サッカーくじ入力支援ソフト GenericPS">
+<meta name="keywords" content="サッカーくじ,スポーツ振興くじ,toto,Minitoto,totoGOAL3">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="GenericPS"></a></h1>
+<nav id="menubar">
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#how">How to Use</a></li>
+<li><a href="#other">Other</a></li>
+<li><a href="#thanks">Thanks</a></li>
+</ul>
+</nav>
+</header>
+
+<div id="container">
+
+<div id="contents">
+
+<section id="software">
+
+<h2>Software</h2>
+<dl>
+<dt>2024/12/20</dt>
+<dd>Ver 1.0.1</dd>
+</dl>
+
+</section>
+<!--/#new-->
+
+<section id="about">
+
+<h2>GenericPSについて</h2>
+
+<h3>GenericPSはサッカーくじ入力支援ソフトです</h3>
+<p>サッカーくじ toto・Minitoto・totoGOAL3 をシングルで購入する際、CSVファイルを読み込んでチェックボックスをクリックする作業を行う簡易的なソフトウェアです。</p>
+<p>かつて<a href="http://www.totoproject.jp/">totoProjectさま(主催 KATSUAKI さま)</a> によって2021年まで開発が行われていた購入支援ソフトtotoPSと(概ね)同等の機能を目指して作成されたソフトウェアです。<br>
+ジェネリック医薬品になぞらえてGenericPSと名づけました。</p>
+
+<h3>対応OS</h3>
+<p>Windows11です。</p>
+
+<h3>対応している販売サイト</h3>
+<p>現在のところtotoオフィシャル、楽天銀行、楽天totoの3つです。<br>
+その他のサイトでの入力を行うための試験的な機能も搭載してみましたが、事前に準備が必要ということもあり<a href="#other">非推奨機能</a>としております。</p>
+
+<h3>規約・免責</h3>
+<p>本件ソフトウェアを利用する方（以下「利用者」）に、本利用規約が適用されます。</p>
+<p>（フリーソフト）</p>
+<p>1　本件ソフトウェアはフリーソフトとし、無料で使用できます。</p>
+<p></p>
+<p>（著作権）</p>
+<p>2　本件ソフトウェアの著作権は作者である"JupiterMachine"が保有しています</p>
+<p></p>
+<p>（禁止行為）</p>
+<p>3 以下の行為を禁止します。</p>
+<p>（1）本件ソフトウェアの再配布</p>
+<p>（2）本件ソフトウェアの改変・改良</p>
+<p>（3）本件ソフトウェアを使用し、第三者から対価を得ること</p>
+<p>（4）本件ソフトウェアを第三者に使用させること</p>
+<p>（5）その他、著作権者に損害をもたらす行為</p>
+<p></p>
+<p>（プログラムの提供停止）</p>
+<p>4　著作権者は、本件ソフトウェアの全部または一部の提供を廃止することがあります。提供の廃止によって利用者に発生した損害について、著作権者は一切責任を負いません。</p>
+<p></p>
+<p>（免責）</p>
+<p>5　本件ソフトウェアに不具合があった場合であっても、著作権者は修復の義務を負いません。</p>
+<p>本件ソフトウェアを使用すること、または、本件ソフトウェアを使用できなかったことに関して発生した損害について、著作権者は一切責任を負いません。</p>
+<p></p>
+
+</section>
+
+<section id="how">
+<h2>GenericPSの使い方</h2>
+
+<h3>1.GenericPSを起動します</h3>
+<p>GenericPSの実行ファイルを開いてください。インストールの必要はありません。</p>
+
+<h3>2.Chromeの起動</h3>
+<p><span class="look">[Chromeの起動]</span>ボタンをクリックしてください。totoPSとは異なり、GenericPSからChromeを起動して操作を行います。<br>もしChromeをインストールしていない場合はインストールを済ませたうえでGenericPSをご利用ください。</p>
+
+<h3>3.販売サイトを選択</h3>
+<p>購入する販売サイトを選択して<span class="look">[決定する]</span>ボタンをクリックしてください。<br>"その他のサイト(非推奨)"については<a href="#other">「非推奨機能について」をご覧ください。</a></p>
+
+<h3>4.くじの種類を選択</h3>
+<p>購入するくじの種類を選択して<span class="look">[決定する]</span>ボタンをクリックしてください。</p>
+
+<h3>5.ファイルを開く</h3>
+<p><span class="look">[CSVファイルを開く]</span>をクリックして購入する買目のCSVファイルを指定してください。<br></p>
+
+<h3>6.ファイルの検証</h3>
+<p><span class="look">[ファイルの検証]</span>ボタンをクリックしてしてください。指定されたCSVファイルが適正か検証します(あくまでも簡易的なものです)。</p>
+<p>適正なファイルならば 7 に進みます。そうでないときは 4 に戻ります。</p>
+
+<h3>7.販売サイトへ移動</h3>
+<p><span class="look">[販売サイトへ移動する]</span>ボタンをクリックしてしてください。移動先のページでログインが必要なときは行ってください。<br>
+<strong class="color1">!!注意!! このソフトウェアはシングル入力ページへの移動を自動的に行う機能はありません。ユーザーご自身で移動を行ってください(totoPSとはもっとも異なる点です)。</strong></p>
+
+<h3>8.入力</h3>
+<p>シングル入力ページの読み込みが完了していることが確認出来たら<span class="look">[入力開始]</span>ボタンをクリックしてしてください。GenericPSが入力を開始します。<br>
+購入手続きを済ませたのち、まだ入力する買目が残っているときはシングル入力ページへの移動を行ってください。以降、ファイルの全買目が入力されるまで繰り返します。<br>
+</p>
+
+<h3>9.終了</h3>
+<p>GenericPSを終了したいときは、右上の<span class="look">終了ボタン[X]</span>を押してください。<br>
+その際、GenericPSが起動させたChromeも同時に閉じられますので、販売サイトからのログアウトが必要なときはご注意ください。</p>
+
+<h3>補足説明</h3>
+<p>GenericPSはチェックボックスのクリックを行う機能のみを持ったソフトウェアです。ユーザーのログイン状態や実際に購入手続きを行ったかどうかなどは検知しません。<br>
+また個人情報の収集・送信、通信内容の傍受なども行っておりません。</p>
+<p>動作の不具合などがありましたら、作者までお伝えいただければ幸いです。</p>
+
+</section>
+
+
+<section id="other">
+
+<h2>非推奨機能について</h2>
+
+<h3>"その他のサイト(非推奨)"とは</h3>
+<p>ここでは 「totoオフィシャル、楽天銀行、楽天toto <strong class="color1">以外</strong>」 の販売サイトを指します。<br>
+※あくまでもGenericPSが対応していないサイトという意味です。販売サイトとして推奨しないという意味ではありません。</p>
+<p>GenericPSの作者がアカウントを保持しているのが上記の3つのサイトのみであるため、"その他のサイト"では動作確認やテストを行うことができません。<br>
+したがって、"その他のサイト"でGenericPSを使用することは「非推奨」としています。</p>
+
+<h3>非推奨機能を使用するには</h3>
+<p>GenericPSはシングル入力ページにおいてクリックしなければならないチェックボックスを特定するために、そのサイト専用に作成したファイルを使用します。<br>
+GenericPSを"その他のサイト"で使用するにはそのサイト用のファイルを<strong class="color1">くじの種類ごとに</strong>準備する必要があります。<br>
+それぞれを特定するため、すべてのチェックボックスの「name属性、またはid属性、またはロケーションパス(完全なXPath)」(以降、「識別子」)を列挙したファイルです。<br>
+たとえばtotoオフィシャルのGOAL3用のファイルは「Settings」フォルダにある"offi_goal3_list.dat"というファイルです。メモ帳などで開いてみてください。
+一行につき一つの「識別子」(name属性)が並んでいるのがわかると思います(全部で240行あります。toto用は390行、Mini用は150行です)。また「識別子」は<strong class="color1">ある特殊な順序で</strong>並べる必要があります。<br>
+このようなファイルを準備できれば(理屈でいえば)"その他のサイト"にもGenericPSは使用可能なはずです。<br>
+ただ作者がアカウントを所持していないサイト用のファイルは作者には用意できないため、ユーザーに自ら作成していただく必要があります。これはかなり面倒な作業になると思います。また作者がテストできないため、予想外の動作をするリスクもあります。<br>
+</p>
+<p>以上のことから「非推奨機能」については、「どうしても使いたい」という声があったときにあらためて使用方法を説明することにします。</p>
+
+</section>
+<!--/#service-->
+
+<section id="thanks">
+
+<h2>Thanks</h2>
+<p class="c">totoProject KATSUAKI さま</p>
+<p></p>
+<p class="c">ページテンプレート : Template Party さま</p>
+<p class="c">アイコン : Icon rainbow さま</p>
+<p></p>
+<p class="c"><a href="https://x.com/generic_ps">genericPS(@generic_ps)</a></p>
+<p class="c"><img src="images/logo.png" alt="" width="300"></p>
+
+
+
+</section>
+<!--/#contact-->
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+<footer>
+<small>Copyright&copy; <a href="index.html">Jupiter Machine</a> All Rights Reserved.</small>
+<span class="pr">《<a href="https://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>
+</footer>
+
+<!--jQueryファイルの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--ページの上部へ戻るボタンとスクリプト-->
+<p class="scroll"><a href="#">↑</a></p>
+<script src="js/scroll.js"></script>
+
+</body>
+</html>
